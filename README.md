@@ -5,11 +5,9 @@
 This application requires `Docker` and `Docker compose`. Please install them first.
 
 Next, ensure that dotenv-cli is installed globally, and run the following command:
-npm install -g dotenv-cli
+`npm install -g dotenv-cli`
 
 Then, run the following command:
-
-````bash
 
 ```bash
 
@@ -18,7 +16,7 @@ Then, run the following command:
 
 To run the app, use the following command:
 
-````
+```
 
 sudo docker-compose up --build // on Mac
 docker-compose up --build // on Windows
