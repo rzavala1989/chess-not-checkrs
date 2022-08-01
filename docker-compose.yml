@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  ai-server:
+    build: ./ai-server
+    container_name: ai-server
+    ports: 
+      - "5555:5555"
+  web-server:
+    build: ./web-server
+    container_name: web-server
+    ports:
+      - "8080:8080"
+    depends_on:
+      - ai-server
